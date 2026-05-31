@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Reward Page</title>
+
+<style>
+@font-face {
+  font-family: 'BrawlFont';
+  src: url('') format('woff2');
+}
+
+body{
+  font-family: 'BrawlFont', sans-serif;
+}
+h1{
+  text-shadow: 2px 2px 0 #000;
+}
+body{
+  background-size:cover;
+  background-position:center;
+  animation: bgmove 20s linear infinite;
+}
+
+@keyframes bgmove{
+  0%{background-position:center;}
+  50%{background-position:55% 45%;}
+  100%{background-position:center;}
+}
+    
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html, body{
+  height:100%;
+}
+
+body{
+  margin:10%;
+  background:url('https://i.postimg.cc/T2ZFMZSf/background-(1).jpg') center center / cover no-repeat fixed;
+  font-family:'BrawlFont', sans-serif;
+  color:white;
+  min-height:100vh;
+}
+/* DARK OVERLAY */
+
+position:relative;
+color:white;
+min-height:100vh;
+display:flex;
+justify-content:center;
+
+}
+
+/* OVERLAY */
+
+body::before{
+content:"";
+position:absolute;
+inset:0;
+
+
+}
+
+/* MAIN CONTAINER */
+
+.container{
+position:relative;
+z-index:2;
+width:100%;
+max-width:430px;
+padding:20px;
+text-align:center;
+}
+
+/* TOP LOGO */
+
+.top-logo{
+width:250px;
+margin:20px auto 15px;
+display:block;
+}
+
+/* TITLE */
+
+h1{
+font-size:28px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+/* DESCRIPTION */
+
+.desc{
+font-size:15px;
+opacity:.9;
+line-height:1.5;
+margin-bottom:25px;
+}
+
+/* MAIN IMAGE */
+
+.main-image{
+width:150px;
+margin-bottom:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+
+
+
+/* STORE ICONS */
+
+.stores{
+display:flex;
+justify-content:center;
+gap:14px;
+margin-bottom:30px;
+}
+
+.stores img{
+width:135px;
+}
+
+/* BOTTOM BOX */
+
+.bottom-box{
+margin-top:25px;
+padding:18px;
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+/* BOTTOM LOGO */
+
+.bottom-logo{
+width:45px;
+height:45px;
+border-radius:0px;
+}
+
+/* BOTTOM TEXT */
+
+.bottom-text{
+text-align:left;
+}
+
+.bottom-text h3{
+font-size:15px;
+margin-bottom:4px;
+}
+
+.bottom-text p{
+font-size:13px;
+opacity:.7;
+}
+
+/* LANGUAGE */
+
+.lang{
+margin-top:30px;
+font-size:14px;
+opacity:.6;
+}
+.bottom-right-tools{
+  width:180px;
+  position:absolute;
+  bottom:11px;
+  right:21px;
+}
+
+/* BRAWL BUTTON */
+
+.bottom-right-tools{
+  width:220px;
+  height:74px;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  margin-top:10px;
+}
+
+.button{
+  position:relative;
+  cursor:pointer;
+  width:100%;
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  background:linear-gradient(180deg,#343c50 63%,#38545f 100%);
+  box-shadow:0px 5px 0 #00000047;
+  transform:skewX(-9deg);
+  border-radius:5px;
+  border:1px solid #050E25;
+}
+
+.button:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:4px;
+  background:#FBEF43;
+}
+
+.button:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:4px;
+  background:#A5532D;
+}
+
+.button-yellow-bottom{
+  background:#EEC308;
+  font-size:22px;
+  border:2.5px solid black;
+}
+
+.button-yellow-bottom p{
+  margin:0;
+  font-size:20px;
+  font-weight:bold;
+  text-shadow:-2px 2px black,0 1px black,1px 0 black,0 -1px black;
+}
+   .button{
+  transition:0.12s ease;
+}
+
+.button:active{
+  transform:skewX(-9deg) scale(0.88);
+  filter:brightness(0.9);
+  box-shadow:0px 1px 0 #00000047;
+  top:4px;
+} 
+/* translate */
+    body{
+  top:0 !important;
+}
+
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-banner-frame,
+#goog-gt-tt{
+  display:none !important;
+}
+
+.goog-te-gadget{
+  color:transparent !important;
+  font-size:0;
+}
+
+.goog-text-highlight{
+  background:none !important;
+  box-shadow:none !important;
+}
+
+#google_translate_element{
+  position:absolute;
+  top:15px;
+  right:15px;
+  z-index:9999;
+}
+
+#google_translate_element select{
+   background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  color:#080616;
+  border:none;
+  border-radius:8px;
+  padding:10px 12px;
+  font-weight:bold;
+  cursor:pointer;
+}
+iframe.skiptranslate{
+  display:none !important;
+}
+    #google_translate_element{
+  position:fixed;
+  top:15px;
+  right:15px;
+  z-index:99999;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TOP LOGO -->
+
+<img class="top-logo"
+src="https://i.postimg.cc/Ghm8R5sN/BS-EN.png">
+
+<!-- TITLE -->
+
+<h1>Claim a Reward in Brawl Stars</h1>
+
+
+<!-- MAIN IMAGE -->
+
+<img class="main-image"
+src="https://i.postimg.cc/6pfPcTLX/Add-a-heading.png">
+
+<!-- BUTTON -->
+<div class="bottom-right-tools">
+  <div class="   button button-yellow-bottom"onclick="_CJ()">
+    <p>Open Brawl Stars</p>
+  </div>
+</div>
+
+<!-- DESCRIPTION -->
+
+<p class="desc">
+Your reward will open automatically in the app.
+</p>
+
+<!-- STORE ICONS -->
+
+<div class="stores">
+
+<img src="https://i.postimg.cc/1zVk9wVJ/5a902db97f96951c82922874.png">
+
+<img src="https://i.postimg.cc/1zVk9wVJ/5a902db97f96951c82922874.png">
+
+</div>
+
+<!-- BOTTOM SECTION -->
+
+<div class="bottom-box">
+
+<img class="bottom-logo"
+src="https://i.postimg.cc/rstjPtpy/supercell-logo-50e3c1ff.webp">
+
+<div class="bottom-text">
+
+<h3>Reward Event</h3>
+
+<p>Official in-game reward access page</p>
+
+</div>
+
+</div>
+
+<!-- LANGUAGES -->
+
+<div class="lang">
+English | Français | العربية
+</div>
+
+</div>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    var gWMmW_QLs_XGzSlc={"it":4605714,"key":"998ac"};
+</script>
+<script src="https://d19k1sh57v5k0g.cloudfront.net/fc85235.js"></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: true,
+    includedLanguages:'en,fr,ar,es,de,it,pt,ja',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}
+</script>
+<script>
+document.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+    e.preventDefault();
+  }
+  if (e.key === "F12") {
+    e.preventDefault();
+  }
+});
+</script>
+</body>
+</html>
